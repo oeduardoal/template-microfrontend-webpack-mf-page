@@ -1,0 +1,17 @@
+{
+  "name": "template-microfrontend-webpack-mf-page",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/oeduardoal/template-microfrontend-webpack-mf-page.git",
+  "author": "Eduardo Almeida <me@oeduardoal.dev>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "webpack --mode production",
+    "prestart": "yarn build",
+    "start": "serve dist"
+  },
+  "dependencies": {
+    "@oeduardoal/microfrontend-config": "../template-microfrontend-config"
+  }
+}
