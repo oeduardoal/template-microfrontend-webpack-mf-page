@@ -9,7 +9,10 @@ const { url: publicPath, port } = urls[env].account;
 module.exports = {
   ...webpack,
   output: {
-    publicPath: "auto",
+    publicPath,
+  },
+  devServer: {
+    port,
   },
   plugins: [
     ...webpack.plugins,
