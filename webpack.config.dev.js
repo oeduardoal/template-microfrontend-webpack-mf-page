@@ -9,6 +9,7 @@ const { account } = urls[env];
 module.exports = {
   ...webpack,
   output: {
+    ...webpack.output,
     publicPath: account.url,
   },
   devServer: {
