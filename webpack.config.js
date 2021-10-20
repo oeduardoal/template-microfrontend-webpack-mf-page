@@ -1,18 +1,11 @@
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
-const { webpack, urls } = require("@oeduardoal/microfrontend-config");
-
-const env = process.env.ENV || "dev";
-
-const { url: publicPath, port } = urls[env].account;
+const { webpack } = require("@oeduardoal/microfrontend-config");
 
 /** @type { import('webpack').Configuration } */
 module.exports = {
   ...webpack,
   output: {
-    publicPath,
-  },
-  devServer: {
-    port,
+    publicPath: "auto",
   },
   plugins: [
     ...webpack.plugins,
