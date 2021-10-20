@@ -1,7 +1,8 @@
 import React from "react";
+import { Heading } from "@grupoboticario/flora-react-heading";
 
 const App: React.FC = () => {
-  return <h1>Account Store</h1>;
+  return <Heading>Account Store</Heading>;
 };
 
 export default App;
