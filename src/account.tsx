@@ -1,6 +1,8 @@
 import React from "react";
 import { Container } from "@grupoboticario/flora-react-container";
 import { Heading } from "@grupoboticario/flora-react-heading";
+import { Button } from "@grupoboticario/flora-react-button";
+import { Input } from "@grupoboticario/flora-react-input";
 import { useLocation } from "react-router-dom";
 
 function useQuery() {
@@ -16,6 +18,8 @@ const Account = () => {
       <Heading level={5} css={{ fontWeight: "$strong" }}>
         Olá {name}
       </Heading>
+      <Button>Button Accounr</Button>
+      <Input id="input-test" labelText="Input" placeholder="Text" />
     </Container>
   );
 };
